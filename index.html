@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sistema de stock</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
-  <header>
-    <h1>Sistema de stock</h1>
-  </header>
-  <main>
-    <p>
-      Simulador de consulta y agregar stock
-    </p>
-  </main>
+<body class="bg-secondary">
+  <div class="container mt-5">
+    <div class="card">
+    <div class="card-header bg-dark text-white mb-4">
+      <h1 class="text-center">Tabla de stock</h1>
+    </div>
+    <div class="card-body">
+      <div id="stockTabla" class="mb-4"></div>
+      <div class="btn-group mb-4" role="group" aria-label="Acciones">
+        <button id="btnConsultar" type="button" class="btn btn-primary">Consultar Stock</button>
+        <button id="btnAgregar" type="button" class="btn btn-success">Agregar Stock</button>
+      </div>
+      <div id="consultaStock" style="display:none;"></div>
+      <div id="mensaje" class="mt-4"></div>
+    </div>
+  </div>
+</div>
   <script src="js/app.js"></script>
 </body>
 </html>
