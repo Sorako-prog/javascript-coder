@@ -115,9 +115,7 @@ function agregarStockUI() {
     });
 }
 
-// Asignar eventos a los botones
 document.getElementById('btnConsultar').addEventListener('click', consultarStockUI);
 document.getElementById('btnAgregar').addEventListener('click', agregarStockUI);
 
-// Mostrar la tabla de stock al cargar la página
 renderStockTabla();
